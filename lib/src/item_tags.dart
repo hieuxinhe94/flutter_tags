@@ -234,10 +234,19 @@ class _ItemTagsState extends State<ItemTags> {
             widget.pressEnabled ? widget.splashColor : Colors.transparent,
         child: Container(
             decoration: BoxDecoration(
-                border: widget.border ??
-                    Border.all(color: widget.activeColor, width: 0.5),
-                borderRadius: widget.borderRadius ??
-                    BorderRadius.circular(_initBorderRadius)),
+              // border: widget.border ??
+              //     Border.all(color: widget.activeColor, width: 0.5),
+              borderRadius: widget.borderRadius ??
+                  BorderRadius.circular(_initBorderRadius),
+              boxShadow: [
+                BoxShadow(
+                  color: Color.fromRGBO(169, 176, 185, 0.42),
+                  spreadRadius: 0,
+                  blurRadius: 8.0,
+                  offset: Offset(0, 2),
+                )
+              ],
+            ),
             padding: widget.padding * (fontSize / 14),
             child: _combine),
         onTap: widget.pressEnabled
