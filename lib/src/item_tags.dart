@@ -236,7 +236,7 @@ class _ItemTagsState extends State<ItemTags> {
             decoration: BoxDecoration(
               // border: widget.border ??
               //     Border.all(color: widget.activeColor, width: 0.5),
-              color: Colors.white,
+              color: color,
               borderRadius: widget.borderRadius ??
                   BorderRadius.circular(_initBorderRadius),
               boxShadow: [
