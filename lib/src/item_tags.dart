@@ -239,14 +239,6 @@ class _ItemTagsState extends State<ItemTags> {
               color: color,
               borderRadius: widget.borderRadius ??
                   BorderRadius.circular(_initBorderRadius),
-              boxShadow: [
-                BoxShadow(
-                  color: Color.fromRGBO(169, 176, 185, 0.42),
-                  spreadRadius: 0,
-                  blurRadius: 8.0,
-                  offset: Offset(0, 2),
-                )
-              ],
             ),
             padding: widget.padding * (fontSize / 14),
             child: _combine),
